@@ -1,0 +1,82 @@
+:root {
+  color-scheme: light;
+  --paper: #fafbf9;
+  --ink: #182728;
+  --muted: #677473;
+  --accent: #126c62;
+  --line: #dfe5df;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+svg { width: 18px; height: 18px; flex-shrink: 0; }
+.container { width: min(1160px, calc(100% - 80px)); margin-inline: auto; }
+.skip-link { position: absolute; top: -80px; left: 20px; padding: 12px 18px; background: var(--ink); color: white; z-index: 10; }
+.skip-link:focus { top: 12px; }
+.site-header { border-bottom: 1px solid var(--line); }
+.navigation { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.wordmark { display: flex; align-items: center; gap: 11px; font-size: 17px; font-weight: 650; letter-spacing: -.4px; }
+.brand-mark { position: relative; display: grid; place-items: center; width: 30px; height: 30px; background: var(--ink); color: var(--paper); font-size: 20px; border-radius: 7px; }
+.brand-mark span { position: absolute; width: 6px; height: 6px; background: #84c9ac; right: -2px; bottom: -2px; border: 1px solid var(--paper); }
+.nav-links { display: flex; gap: 30px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.nav-links a:hover, .video-caption a:hover, .site-footer a:hover { color: var(--accent); }
+.hero { padding-top: 73px; text-align: center; }
+.eyebrow { display: flex; align-items: center; justify-content: center; gap: 9px; margin: 0 0 22px; font-size: 11px; letter-spacing: 1.9px; text-transform: uppercase; font-weight: 650; color: var(--accent); }
+.status-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+h1 { margin: 0 auto; max-width: 990px; font-weight: 550; letter-spacing: -1.35px; line-height: 1.22; }
+.project-name { display: block; font-size: clamp(44px, 5.6vw, 70px); font-weight: 720; letter-spacing: -3px; margin-bottom: 20px; }
+.project-subtitle { display: block; font-size: clamp(26px, 3.1vw, 39px); text-wrap: balance; }
+.hero-actions { margin: 32px 0 46px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 13px 19px; border-radius: 6px; font-size: 13px; font-weight: 550; border: 1px solid transparent; transition: background .15s; }
+.button-primary { background: var(--ink); color: white; }
+.button-primary:hover { background: var(--accent); }
+.button-secondary { border-color: #d3dcd3; background: transparent; }
+.button-secondary:hover { background: #edf1eb; }
+.teaser { margin: 0; background: #03090a; border-radius: 10px; overflow: hidden; text-align: left; }
+.teaser img { display: block; width: 100%; height: auto; aspect-ratio: 16/8; object-fit: cover; }
+.teaser figcaption { display: flex; justify-content: space-between; gap: 15px; padding: 18px 24px; border-top: 1px solid #243031; font-size: 13px; color: #e3e9e6; }
+.teaser-label { color: #94a4a0; font-size: 11px; }
+.experiments { padding-block: 90px 76px; }
+.section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 32px; }
+.section-heading .eyebrow { justify-content: flex-start; margin-bottom: 12px; }
+h2 { margin: 0; font-size: clamp(26px, 3vw, 34px); letter-spacing: -1.15px; font-weight: 600; line-height: 1.2; }
+.section-description { max-width: 285px; color: var(--muted); font-size: 13px; line-height: 1.7; margin: 0; }
+.video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 26px; }
+.experiment { min-width: 0; }
+.experiment video { display: block; width: 100%; aspect-ratio: 64/27; background: #050809; border-radius: 7px; }
+.video-caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 0 0; }
+h3 { margin: 0; display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 600; letter-spacing: -.25px; }
+.building-number { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; color: var(--accent); background: #e9f0e9; border-radius: 4px; padding: 5px 6px; }
+.video-caption a { font-size: 11px; color: var(--muted); }
+.site-footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-block: 27px 32px; font-size: 11px; color: var(--muted); }
+.footer-brand { font-size: 13px; font-weight: 650; color: var(--ink); }
+@media (min-width: 1500px) { .hero { padding-top: 86px; } }
+@media (max-width: 760px) {
+  .container { width: calc(100% - 40px); }
+  .navigation { min-height: 68px; gap: 15px; }
+  .wordmark { font-size: 15px; gap: 9px; }
+  .nav-links { gap: 17px; font-size: 11px; }
+  .hero { padding-top: 48px; }
+  .hero .eyebrow { font-size: 9px; letter-spacing: 1.3px; margin-bottom: 18px; }
+  .project-name { letter-spacing: -2px; margin-bottom: 17px; }
+  .project-subtitle { letter-spacing: -.7px; line-height: 1.3; }
+  .hero-actions { margin: 26px 0 32px; gap: 9px; }
+  .button { padding: 11px 13px; font-size: 11px; gap: 7px; }
+  .teaser figcaption { padding: 14px 16px; flex-direction: column; gap: 6px; font-size: 11px; }
+  .teaser-label { font-size: 10px; }
+  .experiments { padding-block: 58px 48px; }
+  .section-heading { display: block; margin-bottom: 25px; }
+  .section-description { margin-top: 16px; max-width: 340px; }
+  .video-grid { grid-template-columns: 1fr; gap: 28px; }
+  .site-footer { flex-wrap: wrap; padding-block: 22px; }
+  .site-footer > span { order: 3; width: 100%; }
+}
+@media (max-width: 370px) { .container { width: calc(100% - 28px); } .nav-links { gap: 12px; } .brand-mark { width: 25px; height: 25px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
