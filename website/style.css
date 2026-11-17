@@ -48,6 +48,10 @@ h1 { margin: 0 auto; max-width: 990px; font-weight: 550; letter-spacing: -1.35px
 .section-heading .eyebrow { justify-content: flex-start; margin-bottom: 12px; }
 h2 { margin: 0; font-size: clamp(26px, 3vw, 34px); letter-spacing: -1.15px; font-weight: 600; line-height: 1.2; }
 .section-description { max-width: 285px; color: var(--muted); font-size: 13px; line-height: 1.7; margin: 0; }
+.experiment-settings { margin-bottom: 34px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 7px; background: #f0f4ee; }
+.settings-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 22px 0 0; }
+.settings-grid dt { margin-bottom: 7px; color: var(--muted); font-size: 10px; font-weight: 550; letter-spacing: 1px; text-transform: uppercase; }
+.settings-grid dd { margin: 0; font-size: 15px; font-weight: 550; line-height: 1.5; }
 .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 26px; }
 .experiment { min-width: 0; }
 .experiment video { display: block; width: 100%; aspect-ratio: 64/27; background: #050809; border-radius: 7px; }
@@ -74,6 +78,8 @@ h3 { margin: 0; display: flex; align-items: center; gap: 12px; font-size: 15px; 
   .experiments { padding-block: 58px 48px; }
   .section-heading { display: block; margin-bottom: 25px; }
   .section-description { margin-top: 16px; max-width: 340px; }
+  .experiment-settings { padding: 20px; }
+  .settings-grid { grid-template-columns: 1fr; gap: 18px; }
   .video-grid { grid-template-columns: 1fr; gap: 28px; }
   .site-footer { flex-wrap: wrap; padding-block: 22px; }
   .site-footer > span { order: 3; width: 100%; }
