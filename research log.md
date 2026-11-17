@@ -41,3 +41,4 @@
 - **Publication:** Uploading the unchanged video bytes separately to avoid the combined-upload timeouts observed in the initial site setup. Deployment and live verification pending.
 - **Updated media 1/6:** `building_1_chenruiqiu.mp4`, 29509954 bytes, SHA256 `5d120e81bb3812602d54d3de12d247af60a5dd61a3ec2bc5d867f51042f3497a`; source/copy hash and local browser metadata check passed.
 - **Updated media 2/6:** `building_2_dongxiayuan.mp4`, 29425440 bytes, SHA256 `2b280d0947ee7ea69fd4456e4daea59aae17dd8bc0f09819f43adc7355f6f9e8`; source/copy hash and local browser metadata check passed.
+- **Updated media 3/6:** `building_3_dongzhongyuan.mp4`, 29394677 bytes, SHA256 `e6daa0d325ddb4612c04da82dfc4e7c5d38caa09ef0b81d22e6f89418b188541`; source/copy hash and local browser metadata check passed.
