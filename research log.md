@@ -7,3 +7,6 @@
 - **Execution notes:** GitHub Pages was initially unconfigured (expected 404); it is now configured for workflow publishing. Browser tooling was installed outside the project for local checks. The tool-install shell command returned 1 because a following optional `command -v chromium` lookup failed; installation succeeded and checks used the installed Google Chrome executable. The first push failed because the empty local clone initialized as `master`; renamed it to `main` to match the workflow and retried. No website validation failures occurred.
 - **Pending:** Initial push, deployment, and live URL verification. Full robot tests were not run because this change only publishes existing media.
 - **Kept:** Website source and existing video files. The development repository is unchanged. This update does not constitute a new robot experiment.
+
+- **Upload retry:** Two combined 169 MB pushes failed with HTTP 408, including an HTTP/1.1 buffered retry. The page and image-only initial push then succeeded. Uploading the six unchanged videos in separate commits before adding the deployment workflow.
+- **Media batch 1/6:** Add `building_1_chenruiqiu.mp4` (29512485 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
