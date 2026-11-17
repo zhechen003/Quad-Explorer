@@ -43,3 +43,4 @@
 - **Updated media 2/6:** `building_2_dongxiayuan.mp4`, 29425440 bytes, SHA256 `2b280d0947ee7ea69fd4456e4daea59aae17dd8bc0f09819f43adc7355f6f9e8`; source/copy hash and local browser metadata check passed.
 - **Updated media 3/6:** `building_3_dongzhongyuan.mp4`, 29394677 bytes, SHA256 `e6daa0d325ddb4612c04da82dfc4e7c5d38caa09ef0b81d22e6f89418b188541`; source/copy hash and local browser metadata check passed.
 - **Updated media 4/6:** `building_4_longbinlou.mp4`, 29570563 bytes, SHA256 `41b722854763754113164b6f448153583ce0de7beddabc4fad1fa7f540eea671`; source/copy hash and local browser metadata check passed.
+- **Updated media 5/6:** `building_5_puyuan.mp4`, 29407947 bytes, SHA256 `e724204ffcf1f3f672e0da76bd95ea6ba95414a43abca0cf493ff7db48a9e236`; source/copy hash and local browser metadata check passed.
