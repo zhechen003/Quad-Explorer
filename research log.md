@@ -15,3 +15,9 @@
 - **Media batch 4/6:** Add `building_4_longbinlou.mp4` (29571821 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
 - **Media batch 5/6:** Add `building_5_puyuan.mp4` (29409352 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
 - **Media batch 6/6:** Add `building_6_xiayuan.mp4` (29453216 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
+
+## 2026-11-17 — Enable GitHub Pages deployment
+
+- **Changes:** Add the Pages workflow after all six media batches uploaded successfully. It publishes only `website/` and runs on website/workflow changes to `main` or manual dispatch. Set the repository description to the supplied paper title and its homepage to the project URL.
+- **Validation:** All six separate video pushes succeeded. The exact source state passed local asset, hash, JavaScript, desktop/mobile browser, video metadata/playback, and screenshot checks recorded above. Workflow structure and publication path were reviewed against GitHub's static-site starter.
+- **Pending:** First workflow execution and public URL/media verification. No new robot experiments or repository-wide tests were run. Configuration is retained.
