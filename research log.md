@@ -10,3 +10,4 @@
 
 - **Upload retry:** Two combined 169 MB pushes failed with HTTP 408, including an HTTP/1.1 buffered retry. The page and image-only initial push then succeeded. Uploading the six unchanged videos in separate commits before adding the deployment workflow.
 - **Media batch 1/6:** Add `building_1_chenruiqiu.mp4` (29512485 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
+- **Media batch 2/6:** Add `building_2_dongxiayuan.mp4` (29430082 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
