@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 32px; }
 body { margin: 0; }
 a { color: inherit; text-decoration: none; }
-a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+a:focus-visible, button:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 svg { width: 18px; height: 18px; flex-shrink: 0; }
 .container { width: min(1160px, calc(100% - 80px)); margin-inline: auto; }
 .skip-link { position: absolute; top: -80px; left: 20px; padding: 12px 18px; background: var(--ink); color: white; z-index: 10; }
@@ -54,7 +54,13 @@ h2 { margin: 0; font-size: clamp(26px, 3vw, 34px); letter-spacing: -1.15px; font
 .settings-grid dd { margin: 0; font-size: 15px; font-weight: 550; line-height: 1.5; }
 .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 26px; }
 .experiment { min-width: 0; }
+.video-player { position: relative; }
 .experiment video { display: block; width: 100%; aspect-ratio: 64/27; background: #050809; border-radius: 7px; }
+.video-start { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; width: 100%; border: 0; border-radius: 7px; background: #0003; color: white; font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-shadow: 0 1px 4px #000; cursor: pointer; }
+.video-start:hover { background: #0005; }
+.video-feedback { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; font-size: 12px; line-height: 1.5; color: var(--muted); }
+.video-retry { border: 1px solid var(--line); border-radius: 5px; padding: 6px 12px; background: white; color: var(--accent); font: inherit; cursor: pointer; }
+.video-start[hidden], .video-feedback[hidden], .video-retry[hidden] { display: none; }
 .video-caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 0 0; }
 h3 { margin: 0; display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 600; letter-spacing: -.25px; }
 .building-number { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: 11px; color: var(--accent); background: #e9f0e9; border-radius: 4px; padding: 5px 6px; }

@@ -11,8 +11,8 @@
   <meta property="og:image" content="https://zhechen003.github.io/Quad-Explorer/assets/hero-map.jpg">
   <title>Quad-Explorer: A Voxel-Centric Autonomous Quadruped 3D Exploration System in Large Dynamic Environments</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=video-loading-1">
+  <script src="script.js?v=video-loading-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +41,7 @@
     <section class="experiments container" id="experiments" aria-labelledby="experiments-title">
       <div class="section-heading">
         <div><p class="eyebrow">In the real world</p><h2 id="experiments-title">Six buildings. Six explorations.</h2></div>
-        <p class="section-description">Watch each experiment, from onboard views and local planning to the final 3D map.</p>
+        <p class="section-description">Watch each experiment, from onboard views and local planning to the final 3D map. Click to play; original 1080p videos are also available.</p>
       </div>
       <div class="experiment-settings" aria-labelledby="settings-title">
         <h3 id="settings-title">Experiment Settings</h3>
@@ -53,28 +53,52 @@
       </div>
       <div class="video-grid">
         <article class="experiment" aria-labelledby="building-1">
-          <video controls playsinline preload="none" poster="assets/building_1_chenruiqiu.jpg?v=5d120e81bb38" aria-label="Building 1 real-world exploration experiment"><source src="video/building_1_chenruiqiu.mp4?v=5d120e81bb38" type="video/mp4">Your browser does not support embedded video. <a href="video/building_1_chenruiqiu.mp4?v=5d120e81bb38">Open Building 1 video</a>.</video>
-          <div class="video-caption"><h3 id="building-1"><span class="building-number">01</span>Building 1</h3><a href="video/building_1_chenruiqiu.mp4?v=5d120e81bb38" aria-label="Open Building 1 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_1_chenruiqiu.jpg?v=5d120e81bb38" data-src="video/preview/building_1_chenruiqiu.mp4?v=5d120e81bb38" aria-label="Building 1 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 1 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-1"><span class="building-number">01</span>Building 1</h3><a href="video/building_1_chenruiqiu.mp4?v=5d120e81bb38" aria-label="Open Building 1 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="experiment" aria-labelledby="building-2">
-          <video controls playsinline preload="none" poster="assets/building_2_dongxiayuan.jpg?v=2b280d0947ee" aria-label="Building 2 real-world exploration experiment"><source src="video/building_2_dongxiayuan.mp4?v=2b280d0947ee" type="video/mp4">Your browser does not support embedded video. <a href="video/building_2_dongxiayuan.mp4?v=2b280d0947ee">Open Building 2 video</a>.</video>
-          <div class="video-caption"><h3 id="building-2"><span class="building-number">02</span>Building 2</h3><a href="video/building_2_dongxiayuan.mp4?v=2b280d0947ee" aria-label="Open Building 2 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_2_dongxiayuan.jpg?v=2b280d0947ee" data-src="video/preview/building_2_dongxiayuan.mp4?v=2b280d0947ee" aria-label="Building 2 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 2 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-2"><span class="building-number">02</span>Building 2</h3><a href="video/building_2_dongxiayuan.mp4?v=2b280d0947ee" aria-label="Open Building 2 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="experiment" aria-labelledby="building-3">
-          <video controls playsinline preload="none" poster="assets/building_3_dongzhongyuan.jpg?v=e6daa0d325dd" aria-label="Building 3 real-world exploration experiment"><source src="video/building_3_dongzhongyuan.mp4?v=e6daa0d325dd" type="video/mp4">Your browser does not support embedded video. <a href="video/building_3_dongzhongyuan.mp4?v=e6daa0d325dd">Open Building 3 video</a>.</video>
-          <div class="video-caption"><h3 id="building-3"><span class="building-number">03</span>Building 3</h3><a href="video/building_3_dongzhongyuan.mp4?v=e6daa0d325dd" aria-label="Open Building 3 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_3_dongzhongyuan.jpg?v=e6daa0d325dd" data-src="video/preview/building_3_dongzhongyuan.mp4?v=e6daa0d325dd" aria-label="Building 3 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 3 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-3"><span class="building-number">03</span>Building 3</h3><a href="video/building_3_dongzhongyuan.mp4?v=e6daa0d325dd" aria-label="Open Building 3 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="experiment" aria-labelledby="building-4">
-          <video controls playsinline preload="none" poster="assets/building_4_longbinlou.jpg?v=41b722854763" aria-label="Building 4 real-world exploration experiment"><source src="video/building_4_longbinlou.mp4?v=41b722854763" type="video/mp4">Your browser does not support embedded video. <a href="video/building_4_longbinlou.mp4?v=41b722854763">Open Building 4 video</a>.</video>
-          <div class="video-caption"><h3 id="building-4"><span class="building-number">04</span>Building 4</h3><a href="video/building_4_longbinlou.mp4?v=41b722854763" aria-label="Open Building 4 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_4_longbinlou.jpg?v=41b722854763" data-src="video/preview/building_4_longbinlou.mp4?v=41b722854763" aria-label="Building 4 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 4 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-4"><span class="building-number">04</span>Building 4</h3><a href="video/building_4_longbinlou.mp4?v=41b722854763" aria-label="Open Building 4 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="experiment" aria-labelledby="building-5">
-          <video controls playsinline preload="none" poster="assets/building_5_puyuan.jpg?v=e724204ffcf1" aria-label="Building 5 real-world exploration experiment"><source src="video/building_5_puyuan.mp4?v=e724204ffcf1" type="video/mp4">Your browser does not support embedded video. <a href="video/building_5_puyuan.mp4?v=e724204ffcf1">Open Building 5 video</a>.</video>
-          <div class="video-caption"><h3 id="building-5"><span class="building-number">05</span>Building 5</h3><a href="video/building_5_puyuan.mp4?v=e724204ffcf1" aria-label="Open Building 5 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_5_puyuan.jpg?v=e724204ffcf1" data-src="video/preview/building_5_puyuan.mp4?v=e724204ffcf1" aria-label="Building 5 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 5 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-5"><span class="building-number">05</span>Building 5</h3><a href="video/building_5_puyuan.mp4?v=e724204ffcf1" aria-label="Open Building 5 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="experiment" aria-labelledby="building-6">
-          <video controls playsinline preload="none" poster="assets/building_6_xiayuan.jpg?v=334aac0e57f8" aria-label="Building 6 real-world exploration experiment"><source src="video/building_6_xiayuan.mp4?v=334aac0e57f8" type="video/mp4">Your browser does not support embedded video. <a href="video/building_6_xiayuan.mp4?v=334aac0e57f8">Open Building 6 video</a>.</video>
-          <div class="video-caption"><h3 id="building-6"><span class="building-number">06</span>Building 6</h3><a href="video/building_6_xiayuan.mp4?v=334aac0e57f8" aria-label="Open Building 6 video">Open video <span aria-hidden="true">↗</span></a></div>
+          <div class="video-player">
+            <video playsinline preload="none" poster="assets/building_6_xiayuan.jpg?v=334aac0e57f8" data-src="video/preview/building_6_xiayuan.mp4?v=334aac0e57f8" aria-label="Building 6 real-world exploration experiment"></video>
+            <button class="video-start" type="button" aria-label="Play Building 6 video">▶ Play video</button>
+          </div>
+          <div class="video-feedback" hidden><span class="video-message" role="status" aria-live="polite"></span><button class="video-retry" type="button" hidden>Retry</button></div>
+          <div class="video-caption"><h3 id="building-6"><span class="building-number">06</span>Building 6</h3><a href="video/building_6_xiayuan.mp4?v=334aac0e57f8" aria-label="Open Building 6 video">Original 1080p <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
     </section>
