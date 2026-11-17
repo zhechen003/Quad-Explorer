@@ -18,4 +18,4 @@ python3 -m http.server 8000 --directory website
 
 Edit `website/index.html` for page content, `website/style.css` for styling, and `website/script.js` for video playback behavior. Videos are in `website/video/`, and images are in `website/assets/`.
 
-Inline players load the smaller videos in `website/video/preview/` on click. The Original 1080p links open the full-resolution versions in `website/video/`. When replacing experiment videos, update both versions and their content-versioned URLs in the page.
+Inline players load the smaller videos in `website/video/preview/` on click. Entering fullscreen switches to the original 2560 × 1080 video; exiting returns to the smaller inline version, preserving playback position and playing/paused state. The Original 1080p links also open the full-resolution versions in `website/video/`. When replacing experiment videos, update both versions and their content-versioned URLs in the page.
