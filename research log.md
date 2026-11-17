@@ -14,3 +14,4 @@
 - **Media batch 3/6:** Add `building_3_dongzhongyuan.mp4` (29397556 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
 - **Media batch 4/6:** Add `building_4_longbinlou.mp4` (29571821 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
 - **Media batch 5/6:** Add `building_5_puyuan.mp4` (29409352 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
+- **Media batch 6/6:** Add `building_6_xiayuan.mp4` (29453216 bytes); source/copy hash and local browser checks passed as recorded above. Deployment remains pending until all videos and workflow are pushed.
